@@ -1,0 +1,265 @@
+body
+{
+    background-image: url(images/istockphoto-1061217404-612x612.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li
+{
+    float: left;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0 0 0 150px;
+}
+
+nav
+{
+    background-color: #5569DC;
+    overflow: auto;
+}
+
+nav a
+{
+    width: 100px;
+    display: block;
+    padding: 40px 15px 10px 40px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+}
+
+nav a:hover
+{
+    background-color: orange;
+    transition-duration: 0.5s;
+}
+
+/*First container*/
+.myContainer
+{
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 1fr 500px 1fr 1fr 1fr;
+    height: auto;
+   
+}
+
+
+#myName
+{
+    grid-column: 1/4;
+    grid-row: 1/6;
+    background-image: url(images/macbook.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+#myCredentials
+{
+    grid-column: 4/6;
+    grid-row: 1/6;
+    background-color: #5569dc;
+    text-align: center;
+    color: white
+    font-size: 20px;
+}
+    
+.myContent
+{
+    margin-top: 60px;
+    color: white;
+    font-style: italic;
+    
+}
+
+#namePetros
+{
+    font-size: 30px;
+    margin-left: 60px;
+    font-weight: bold;
+    
+}
+
+/*Grid2 starts here*/
+.container2
+{
+    display: grid;
+    grid-column: repeat(6 auto);
+    grid-row: 700px auto auto auto auto;
+    height: auto;
+}
+
+
+
+.container2Item
+{
+    margin-left: 20px;
+}
+#aboutMe
+{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    
+    font-style: italic;
+    
+}
+
+#aboutMe h2
+{
+    text-align: left;
+}
+
+figure
+{
+  
+}
+
+#statement
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#skills
+{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    margin-top: 10px;
+    text-align: center;
+   
+    
+}
+
+#skills p,h2
+{
+    margin-bottom: 10px;
+    font-style: italic;
+    
+}
+
+#education
+{
+    grid-column: 4/7;
+    grid-row: 2/4;
+    margin-top: 10px;
+    text-align: center;
+   
+}
+
+#education p,h2
+{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+#experience
+{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#experience p,h2
+{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#projects
+{
+    grid-column: 4/7;
+    text-align: center;
+}
+
+#projects p,h2
+{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+.resumeContent
+{
+    margin: 0px 30px 10px 30px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    background-color: #5569DC;
+}
+
+.item
+{
+    display: inline-flex;
+    margin: 10px 40px 0px 40px;
+    font-style: italic;
+    color: white;
+}
+
+#copyright
+{
+    flex-grow: 1;
+}
+
+#contact
+{
+    flex-grow: 1;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+    margin:0px;
+}
+
+
+
+@media (max-width:600px)
+{
+    .mycontainer
+    {
+        grid-template-columns: 1;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .myCredentials
+    {
+      grid-row: 1/2;   
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
